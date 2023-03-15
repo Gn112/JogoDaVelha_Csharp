@@ -37,12 +37,13 @@
             this.b7 = new System.Windows.Forms.Button();
             this.b8 = new System.Windows.Forms.Button();
             this.b9 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.ptJ1 = new System.Windows.Forms.Label();
+            this.ptJ2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // b1
             // 
-            this.b1.Location = new System.Drawing.Point(10, 40);
+            this.b1.Location = new System.Drawing.Point(10, 57);
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(62, 62);
             this.b1.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             // b2
             // 
-            this.b2.Location = new System.Drawing.Point(78, 40);
+            this.b2.Location = new System.Drawing.Point(78, 57);
             this.b2.Name = "b2";
             this.b2.Size = new System.Drawing.Size(62, 62);
             this.b2.TabIndex = 1;
@@ -60,7 +61,7 @@
             // 
             // b3
             // 
-            this.b3.Location = new System.Drawing.Point(146, 40);
+            this.b3.Location = new System.Drawing.Point(146, 57);
             this.b3.Name = "b3";
             this.b3.Size = new System.Drawing.Size(62, 62);
             this.b3.TabIndex = 2;
@@ -69,7 +70,7 @@
             // 
             // b4
             // 
-            this.b4.Location = new System.Drawing.Point(10, 108);
+            this.b4.Location = new System.Drawing.Point(10, 125);
             this.b4.Name = "b4";
             this.b4.Size = new System.Drawing.Size(62, 62);
             this.b4.TabIndex = 3;
@@ -78,7 +79,7 @@
             // 
             // b5
             // 
-            this.b5.Location = new System.Drawing.Point(78, 108);
+            this.b5.Location = new System.Drawing.Point(78, 125);
             this.b5.Name = "b5";
             this.b5.Size = new System.Drawing.Size(62, 62);
             this.b5.TabIndex = 4;
@@ -87,7 +88,7 @@
             // 
             // b6
             // 
-            this.b6.Location = new System.Drawing.Point(146, 108);
+            this.b6.Location = new System.Drawing.Point(146, 125);
             this.b6.Name = "b6";
             this.b6.Size = new System.Drawing.Size(62, 62);
             this.b6.TabIndex = 5;
@@ -96,7 +97,7 @@
             // 
             // b7
             // 
-            this.b7.Location = new System.Drawing.Point(10, 176);
+            this.b7.Location = new System.Drawing.Point(10, 193);
             this.b7.Name = "b7";
             this.b7.Size = new System.Drawing.Size(62, 62);
             this.b7.TabIndex = 6;
@@ -105,7 +106,7 @@
             // 
             // b8
             // 
-            this.b8.Location = new System.Drawing.Point(78, 176);
+            this.b8.Location = new System.Drawing.Point(78, 193);
             this.b8.Name = "b8";
             this.b8.Size = new System.Drawing.Size(62, 62);
             this.b8.TabIndex = 7;
@@ -114,29 +115,39 @@
             // 
             // b9
             // 
-            this.b9.Location = new System.Drawing.Point(146, 176);
+            this.b9.Location = new System.Drawing.Point(146, 193);
             this.b9.Name = "b9";
             this.b9.Size = new System.Drawing.Size(62, 62);
             this.b9.TabIndex = 8;
             this.b9.UseVisualStyleBackColor = true;
             this.b9.Click += new System.EventHandler(this.b9_Click);
             // 
-            // label1
+            // ptJ1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "label1";
+            this.ptJ1.AutoSize = true;
+            this.ptJ1.Location = new System.Drawing.Point(7, 9);
+            this.ptJ1.Name = "ptJ1";
+            this.ptJ1.Size = new System.Drawing.Size(94, 13);
+            this.ptJ1.TabIndex = 9;
+            this.ptJ1.Text = "Pontos Jogador X:";
+            // 
+            // ptJ2
+            // 
+            this.ptJ2.AutoSize = true;
+            this.ptJ2.Location = new System.Drawing.Point(7, 31);
+            this.ptJ2.Name = "ptJ2";
+            this.ptJ2.Size = new System.Drawing.Size(95, 13);
+            this.ptJ2.TabIndex = 10;
+            this.ptJ2.Text = "Pontos Jogador O:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(215, 246);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(215, 264);
+            this.Controls.Add(this.ptJ2);
+            this.Controls.Add(this.ptJ1);
             this.Controls.Add(this.b9);
             this.Controls.Add(this.b8);
             this.Controls.Add(this.b7);
@@ -166,7 +177,8 @@
         private System.Windows.Forms.Button b7;
         private System.Windows.Forms.Button b8;
         private System.Windows.Forms.Button b9;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ptJ1;
+        private System.Windows.Forms.Label ptJ2;
     }
 }
 

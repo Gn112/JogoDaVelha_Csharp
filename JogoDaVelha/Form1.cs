@@ -22,8 +22,11 @@ namespace JogoDaVelha
 
         }
 
+        // Funciona mas tá meio cagado algumas coisas e não tenho tempo pra resolver
 
         bool turno = true;
+        int pontosX = 0;
+        int pontosO = 0;
 
         private void b1_Click(object sender, EventArgs e)
         {
@@ -324,6 +327,9 @@ namespace JogoDaVelha
                 if ((t == b1.Text) && (t == b2.Text) && (t == b3.Text))
                 {
                     MessageBox.Show("Jogador 1 Venceu");
+                    pontosX++;
+                    ptJ1.Text = $"Pontos Jogador X: {pontosX}";
+                    ResetaJogo();
                 }
                 else
                 {
@@ -332,6 +338,9 @@ namespace JogoDaVelha
                     if ((t == b1.Text) && (t == b2.Text) && (t == b3.Text))
                     {
                         MessageBox.Show("Jogador 2 Venceu");
+                        pontosO++;
+                        ptJ2.Text = $"Pontos Jogador O: {pontosO}";
+                        ResetaJogo();
                     }
                 }
 
@@ -348,6 +357,10 @@ namespace JogoDaVelha
                 if ((t == b4.Text) && (t == b5.Text) && (t == b6.Text))
                 {
                     MessageBox.Show("Jogador 1 Venceu");
+                    pontosX++;
+                    ptJ1.Text = $"Pontos Jogador X: {pontosX}";
+                    ResetaJogo();
+
                 }
                 else
                 {
@@ -356,6 +369,9 @@ namespace JogoDaVelha
                     if ((t == b4.Text) && (t == b5.Text) && (t == b6.Text))
                     {
                         MessageBox.Show("Jogador 2 Venceu");
+                        pontosO++;
+                        ptJ2.Text = $"Pontos Jogador O: {pontosO}";
+                        ResetaJogo();
                     }
                 }
 
@@ -371,6 +387,9 @@ namespace JogoDaVelha
                 if ((t == b7.Text) && (t == b8.Text) && (t == b9.Text))
                 {
                     MessageBox.Show("Jogador 1 Venceu");
+                    pontosX++;
+                    ptJ1.Text = $"Pontos Jogador X: {pontosX}";
+                    ResetaJogo();
                 }
                 else
                 {
@@ -379,6 +398,9 @@ namespace JogoDaVelha
                     if ((t == b7.Text) && (t == b8.Text) && (t == b9.Text))
                     {
                         MessageBox.Show("Jogador 2 Venceu");
+                        pontosO++;
+                        ptJ2.Text = $"Pontos Jogador O: {pontosO}";
+                        ResetaJogo();
                     }
                 }
 
@@ -387,23 +409,166 @@ namespace JogoDaVelha
 
         public void Testa3(int jogador)
         {
+            String t = "";
+            if (jogador == 1)
+            {
+                t = "X";
 
+                if ((t == b1.Text) && (t == b4.Text) && (t == b7.Text))
+                {
+                    MessageBox.Show("Jogador 1 Venceu");
+                    pontosX++;
+                    ptJ1.Text = $"Pontos Jogador X: {pontosX}";
+                    ResetaJogo();
+                }
+                else
+                {
+                    t = "O";
+
+                    if ((t == b1.Text) && (t == b4.Text) && (t == b7.Text))
+                    {
+                        MessageBox.Show("Jogador 2 Venceu");
+                        pontosO++;
+                        ptJ2.Text = $"Pontos Jogador O: {pontosO}";
+                        ResetaJogo();
+                    }
+                }
+
+            }
         }
         public void Testa4(int jogador)
         {
+            String t = "";
+            if (jogador == 1)
+            {
+                t = "X";
 
+                if ((t == b2.Text) && (t == b5.Text) && (t == b8.Text))
+                {
+                    MessageBox.Show("Jogador 1 Venceu");
+                    pontosX++;
+                    ptJ1.Text = $"Pontos Jogador X: {pontosX}";
+                    ResetaJogo();
+                }
+                else
+                {
+                    t = "O";
+
+                    if ((t == b2.Text) && (t == b5.Text) && (t == b8.Text))
+                    {
+                        MessageBox.Show("Jogador 2 Venceu");
+                        pontosO++;
+                        ptJ2.Text = $"Pontos Jogador O: {pontosO}";
+                        ResetaJogo();
+                    }
+                }
+
+            }
         }
         public void Testa5(int jogador)
         {
+            String t = "";
+            if (jogador == 1)
+            {
+                t = "X";
 
+                if ((t == b3.Text) && (t == b6.Text) && (t == b9.Text))
+                {
+                    MessageBox.Show("Jogador 1 Venceu");
+                    pontosX++;
+                    ptJ1.Text = $"Pontos Jogador X: {pontosX}";
+                    ResetaJogo();
+                }
+                else
+                {
+                    t = "O";
+
+                    if ((t == b3.Text) && (t == b6.Text) && (t == b9.Text))
+                    {
+                        MessageBox.Show("Jogador 2 Venceu");
+                        pontosO++;
+                        ptJ2.Text = $"Pontos Jogador O: {pontosO}";
+                        ResetaJogo();
+                    }
+                }
+
+            }
         }
         public void Testa6(int jogador)
         {
+            String t = "";
+            if (jogador == 1)
+            {
+                t = "X";
 
+                if ((t == b1.Text) && (t == b5.Text) && (t == b9.Text))
+                {
+                    MessageBox.Show("Jogador 1 Venceu");
+                    pontosX++;
+                    ptJ1.Text = $"Pontos Jogador X: {pontosX}";
+                    ResetaJogo();
+                }
+                else
+                {
+                    t = "O";
+
+                    if ((t == b1.Text) && (t == b5.Text) && (t == b9.Text))
+                    {
+                        MessageBox.Show("Jogador 2 Venceu");
+                        pontosO++;
+                        ptJ2.Text = $"Pontos Jogador O: {pontosO}";
+                        ResetaJogo();
+                    }
+                }
+
+            }
         }
         public void Testa7(int jogador)
         {
+            String t = "";
+            if (jogador == 1)
+            {
+                t = "X";
 
+                if ((t == b7.Text) && (t == b5.Text) && (t == b3.Text))
+                {
+                    MessageBox.Show("Jogador 1 Venceu");
+                    pontosX++;
+                    ptJ1.Text = $"Pontos Jogador X: {pontosX}";
+                    ResetaJogo();
+                }
+                else
+                {
+                    t = "O";
+
+                    if ((t == b7.Text) && (t == b5.Text) && (t == b3.Text))
+                    {
+                        MessageBox.Show("Jogador 2 Venceu");
+                        pontosO++;
+                        ptJ2.Text = $"Pontos Jogador O: {pontosO}";
+                        ResetaJogo();
+                    }
+                }
+
+            }
+        }
+
+        public void ResetaJogo()
+        {
+            // ptJ1.Text = "Pontos Jogador X:";
+            // ptJ2.Text = "Pontos Jogador O:";
+
+            turno = true;
+
+            b1.Text = ""; b1.Enabled = true;
+            b2.Text = ""; b2.Enabled = true;
+            b3.Text = ""; b3.Enabled = true;
+            b4.Text = ""; b4.Enabled = true;
+            b5.Text = ""; b5.Enabled = true;
+            b6.Text = ""; b6.Enabled = true;
+            b7.Text = ""; b7.Enabled = true;
+            b8.Text = ""; b8.Enabled = true;
+            b9.Text = ""; b9.Enabled = true;
         }
     }
 }
